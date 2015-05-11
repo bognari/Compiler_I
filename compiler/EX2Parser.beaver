@@ -1,0 +1,16 @@
+%package "ex2";
+%class "EX2Parser";
+
+%embed {: double ret = 0; :} ;
+
+%terminals C, COUNT, ID, VALUE;
+
+%typeof List = "double";
+%typeof COUNT = "int";
+%typeof VALUE = "double";
+
+
+%goal List;
+
+List = E List | {: double result = ret; return new Symbol(result); :};
+E = COUNT.a C ID C VALUE.b {: ret += a * b; :};

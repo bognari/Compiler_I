@@ -1,0 +1,4 @@
+12, eggs , 0.20
+3, parcels of TOP spaghetti, 2.00
+6, bottles 7up , 0.90
+2, bottles of French wine , 12.50
